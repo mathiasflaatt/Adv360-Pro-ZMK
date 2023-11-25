@@ -11,6 +11,21 @@
     flavor = "tap-preferred";
 };
 
+&sk {
+    release-after-ms = <900>;
+    quick-release;
+};
+
+&sl {
+    ignore-modifiers;
+};
+
+&lt {
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <175>;
+};
+
 / {
     behaviors {
         #include "macros.dtsi"
