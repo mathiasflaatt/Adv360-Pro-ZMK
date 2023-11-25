@@ -181,6 +181,14 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
         };
+
+        cpy_pst: cpy_pst {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CPY_PST";
+            #binding-cells = <0>;
+            tapping-term-ms = <125>;
+            bindings = <&kp LG(C)>, <&kp LG(V)>;
+        };
     };
 
     macros {
@@ -191,11 +199,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1          &kp N2          &kp N3              &kp N4        &kp N5  &tog 2                                                   &mo 4      &kp N6  &kp N7             &kp N8               &kp N9           &kp N0            &kp MINUS
-&kp TAB    &kp Q           &kp W           &kp F               &kp P         &kp B   &none                                                    &none      &kp J   &kp L              &kp U                &kp Y            &kp SINGLE_QUOTE  &kp BSLH
-&kp ESC    &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL R  &hm LSHIFT T  &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp M   &hm RIGHT_SHIFT N  &hm RIGHT_CONTROL E  &hm RIGHT_ALT I  &hm RIGHT_GUI O   &kp SQT
-&kp LSHFT  &kp Z           &kp X           &kp C               &kp D         &kp V                        &kp HOME      &kp PG_UP                        &kp K   &kp N              &kp COMMA            &kp DOT          &kp FSLH          &kp RSHFT
-&mo 3      &kp GRAVE       &kp CAPS        &kp LEFT            &kp RIGHT             &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP             &kp DOWN             &kp LBKT         &kp RBKT          &mo 3
+&kp ESCAPE  &mt EXCLAMATION N1  &mt AT_SIGN N2  &mt HASH N3         &mt DOLLAR N4  &mt PERCENT N5  &tog 2                                                                               &mo 4              &mt CARET N6  &mt AMPS N7        &mt LS(ASTERISK) N8  &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0  &kp MINUS
+&kp TAB     &kp Q               &kp W           &kp F               &kp P          &kp B           &kp SLASH                                                                            &kp LS(LA(MINUS))  &kp J         &kp L              &kp U                &kp Y                    &kp SINGLE_QUOTE          &kp BSLH
+&kp DEL     &hm LEFT_GUI A      &hm LEFT_ALT S  &hm LEFT_CONTROL R  &hm LSHIFT T   &kp G           &kp MINUS  &cpy_pst   &kp LG(V)             &kp LC(LS(R))      &kp LS(LC(LEFT_ALT))  &kp EQUAL          &kp M         &hm RIGHT_SHIFT N  &hm RIGHT_CONTROL E  &hm RIGHT_ALT I          &hm RIGHT_GUI O           &kp SQT
+&kp LSHFT   &kp Z               &kp X           &kp C               &kp D          &kp V                                 &kp C_PREV            &kp C_NEXT                                                  &kp K         &kp N              &kp COMMA            &kp DOT                  &kp FSLH                  &kp RSHFT
+&mo 2       &kp GRAVE           &kp CAPS        &kp LEFT            &kp RIGHT                      &mo 1      &kp SPACE  &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES  &kp ENTER             &kp BACKSPACE                    &kp UP             &kp DOWN             &kp LBKT                 &kp RBKT                  &mo 3
             >;
         };
 
