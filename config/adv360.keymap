@@ -31,6 +31,17 @@
             label = "SWAPPER";
         };
 
+        dot_spc: dot_spc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp DOT &kp SPACE &sk LSHIFT>,
+                <&macro_tap_time 5>,
+                <&macro_wait_time 0>;
+
+            label = "DOT_SPC";
+        };
+
         #endif
 
         hm: homerow_mods {
