@@ -194,6 +194,31 @@
     macros {
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        cut {
+            bindings = <&kp LG(X)>;
+            key-positions = <48 50>;
+            timeout-ms = <18>;
+            layers = <0 1 2>;
+        };
+
+        copy {
+            bindings = <&kp LG(C)>;
+            key-positions = <48 49>;
+            timeout-ms = <18>;
+            layers = <0 1 2>;
+        };
+
+        paste {
+            bindings = <&kp LG(V)>;
+            key-positions = <49 50>;
+            layers = <0 1 2>;
+            timeout-ms = <18>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
