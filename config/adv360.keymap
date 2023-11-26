@@ -49,23 +49,21 @@
         dot_spc: dot_spc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp DOT &kp SPACE &sk LSHIFT>,
-                <&macro_tap_time 5>,
-                <&macro_wait_time 0>;
-
+            bindings = <&kp DOT &kp SPACE &sk LSHIFT>;
             label = "DOT_SPC";
+            wait-ms = <5>;
+            tap-ms = <0>;
         };
 
         uc_shift: uc_shift {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
                 <&mo 5 &kp LSHFT>,
+                <&macro_press>,
                 <&macro_pause_for_release>,
-                <&macro_release>,
-                <&mo 5 &kp LSHIFT>;
+                <&mo 5 &kp LSHIFT>,
+                <&macro_release>;
 
             label = "UC_SHIFT";
         };
