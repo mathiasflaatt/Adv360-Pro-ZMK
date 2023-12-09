@@ -5,7 +5,7 @@ manifest:
     - name: mathiasflaatt
       url-base: https://github.com/mathiasflaatt
   projects:
-    - name: zmk-adv
+    - name: zmk-adv360
       remote: mathiasflaatt
       revision: adv360-z3.2-mf
       import: app/west.yml
