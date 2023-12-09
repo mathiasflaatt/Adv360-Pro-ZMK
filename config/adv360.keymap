@@ -21,7 +21,7 @@
 // #define MOUSE 6
 
 #include "combos.dtsi"  // requires layer aliases
-#include "mouse.dtsi"
+// #include "mouse.dtsi"
 
 #define XXX XXX
 #define ___ ___
