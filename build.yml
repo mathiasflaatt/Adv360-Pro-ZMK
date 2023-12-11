@@ -1,0 +1,4 @@
+---
+include:
+  - board: adv360_left
+  - board: adv360_right

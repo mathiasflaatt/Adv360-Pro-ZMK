@@ -3,12 +3,11 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
-// #include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/mouse.h>
 
-
-#include "../nodefree-config/helper.h"
-#include "../nodefree-config/keypos_def/keypos_adv360.h"
-#include "../nodefree-config/intl_chars/norwegian.dtsi"
+#include "../zmk-nodefree-config/helper.h"
+#include "../zmk-nodefree-config/keypos_def/keypos_adv360.h"
+#include "../zmk-nodefree-config/international_chars/norwegian.dtsi"
 
 
 //Layer definitions
